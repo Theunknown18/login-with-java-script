@@ -1,0 +1,695 @@
+JAVASCRIPT :
+-----------
+- JS is a scripting language.
+- It is an object oriented language.
+- JS is a light weight and cross platform.
+- JS is used to create client side dynamic pages.
+- JS does not require any virtual  machine to compile 
+execute the code.
+- JS compiler is embeded within the browsers and is responsible
+for translating the js code binary code.
+
+
+Uses of JS :
+-----------
+- To create interactive websites.
+- Develop mobile applications.
+- Server side technologies.
+- Client side technologies.
+- web applications.
+- gaming applications.
+
+
+Features of JS :
+----------------
+- JS is supported by almost all the browsers and these browsers
+ provide built-in runtime enviranment.
+- JS follows the syntax of C programming and structure.
+- JS is a structural programming language.
+- JS is a case sensitive.
+
+JS variables :
+-------------
+Js variables are name of storage location.
+There are two types in js variables,
+- Local variables.
+- Global variables.
+
+Rules to declare JS variables;
+------------------------------
+- variable name should start with lettrs (a-z)(A-Z) OR 
+underscore (_) or dollar ($).
+- After the letter we can use digits/numbers.
+example : demo1 
+- JS is case sensitive.
+
+Local Variables :
+---------------
+	Local variables are declared inside function or the
+block. Hence, these variables are accessible within the same 
+function or the block.
+
+Global variables :
+-----------------
+	 these variables are declared globally and are accessible 
+through out the program.
+
+example : <html>
+	<head>
+		<title>JAVASCRIPT EXAMPLE</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var x=10;
+			function fun1()
+			{
+				
+				document.write(x);
+			}
+			function fun2()
+			{
+				
+				document.write(x);
+			}
+			fun1();
+			fun2();
+		</script>
+	</body>
+</html>
+
+Let :
+-----
+- Let is similar to var whch is used to declare a varialble
+but when you declare a variable using "let" keyword you cannot redeclare
+a variable.
+
+example - 
+		<script type="text/javascript">
+			var x=10;
+			var x=20;
+			document.write(x);
+		</script>
+
+		<script type="text/javascript">
+
+			let x= 10;
+			let x= 20;
+			document.write(x);
+
+		</script>
+
+const:
+------
+- const is a keyword similar to var and let.
+- here, we should intitialize the value otherwise it will 
+throw an error.
+
+example : <body>
+		<script type="text/javascript">
+			
+			function fun1()
+			{
+				const a=11;
+				document.write(a);
+			}
+			fun1();
+
+		</script>
+	</body>
+
+JS Datatypes :
+--------------
+Datatypes are used to define the type of the data.
+there are two types of dataypes;
+1) primitive datatype.
+2) non-primitive datatype.
+
+Primitive datatypes:
+-------------------
+- String : used to define the sequence of characters
+	example : a="pentagonspace"
+
+- Number : used to define the digits/numbers
+	example : a=107;
+
+- Boolean : used to define true or false.
+- Null : used to define no value.
+- Undefined : used to define a variable for which no value 
+is assigned
+	example : var a;
+
+
+2) Non-primitive datatype :
+--------------------------
+
+- object : it represents the instance through which we can 
+access the value.
+
+- Array : it used to represent the group of similar values.
+
+
+
+JS Functions :
+--------------
+	it is a set of code or instructions to perform
+some task.
+
+Advantages :
+-----------
+- reusability
+- less coding
+
+Syntax ;
+--------
+function function_name(argu1, argu2,...)
+{
+	//code of execution or body of the function
+}
+
+Window prompt():
+----------------
+	This method is used to display the dialog box that
+prompts user inputs.
+
+example : <body>
+		<script type="text/javascript">
+			
+			function info()
+			{
+				let name = prompt("Enter your name");
+
+				if(name!=null)
+				{
+					document.write("Hello!!"  +name+ ", How are you??");
+				}
+			}
+
+		</script>
+
+	<h1>Pentagon Space</h1>	
+
+	<input type="button" name = "button" value = "clickme" onclick="info()"">
+	
+	</body>
+
+
+
+JS date function:
+-----------------
+It is used to display the current date and timings.
+
+ex 1: <script type="text/javascript">
+			
+			const date = new Date();
+			console.log(date);
+
+		</script>
+
+ex 2: <script type="text/javascript">
+			
+			const date = new Date(1000000000);
+			console.log(date);
+
+		</script>
+
+ex 3:<script type="text/javascript">
+			
+			const date = new Date("2018-05-13");
+			console.log(date);
+
+		</script>
+
+ex 4 : <script type="text/javascript">
+			
+			const date = new Date(2018, 5, 13, 10, 33, 37);
+			console.log(date);
+
+		</script>
+
+
+JS Arrays :
+-----------
+Arrays are a kind of data structure where we can store the multiple datas.
+There is no restriction for data that we are storing.
+
+how do we declare an array...
+Syntax : 
+
+method 1 -
+---------
+var array_name = [];
+let array_name = [];
+const array_name = [];
+
+OR
+
+Method 2 :
+----------
+var array_name = new Array();
+
+ex 1 : var arr1 = [1, 2,3, 4, 5];
+	document.write(arr1);
+
+o/p : 1, 2,3, 4, 5
+
+
+ex 2 : var arr1 = new Array(50, 60, 70,"sam", "jam", "tom");
+	document.write(arr1[3]);
+
+o/p : 50, 60, 70,"sam", "jam", "tom"
+
+
+ex 3 : var arr1 = new Array(50, 60, 70,"sam", "jam", "tom");
+	document.write(arr1[3]);
+
+o/p : sam
+
+
+
+ex 4: var arr1 = new Array(50, 60, 70, [1, "geeta", "neeta"],
+			"sam", "jam", "tom");
+	document.write(arr1[3]);
+o/p: 1, "geeta", "neeta"
+
+
+
+
+
+
+
+
+JS Methods:
+-----------
+- push ()
+- pop ()
+- unshift ()
+- shift ()
+- indexOf ()
+- join()
+- includes ()
+- reverse ()
+- slice ()
+- splice ()
+
+
+
+
+
+push () :
+---------
+it is used to insert an element or a data inside an array and the method
+always appends the data to the end of the array.
+
+example : 		var arr = [];
+			    arr.push("chandan");
+			    arr.push("nandan");
+			    arr.push("spandana");
+			    arr.push(11);
+			    arr.push(12);
+			   document.write(arr);
+
+pop () :
+-------
+it is used to remove an element from the array and the elemts will 
+removed from the last of the array.
+
+example :var arr = [1, 2, 3, 4, "chandana", 56, "nandana", 13, "pooja"];
+			arr.pop();
+			arr.pop();
+			arr.pop();
+			document.write(arr); 
+
+
+unshift ():
+----------
+it is used ti insert an element in the beginning of an array (0th index).
+
+example : var arr = [1, 2, 3, 4, "chandana", 56, "nandana", 13, "pooja"];
+			arr.unshift("aishwarya");
+			arr.unshift(90);
+			document.write(arr); 
+
+
+shift ():
+---------
+it is used to remove an elemnt from the beginning of an array (0th index).
+
+example : var arr = [1, 2, 3, 4, "chandana", 56, "nandana", 13, "pooja"];
+			arr.shift();
+			arr.shift();
+			document.write(arr);
+
+indexOf ():
+-----------
+it used to get the index value of a specific element in an array.
+if an elemnt is present in an array it will be returned as it is and
+if it is not present, then it will return -1.
+
+example 1: var arr = [1, 2, 3, 4, "chandana", 56, "nandana", 13, "pooja"];
+		
+			document.write(arr.indexOf(4)); 
+			console.log(arr);
+o/p : 3
+
+example 2 : var arr = [1, 2, 3, 4, "chandana", 56, "nandana", 13, "pooja"];
+		
+			document.write(arr.indexOf(25)); 
+o/p : -1
+
+
+join ():
+--------
+
+it is used to join the elements of an array. It will display the array
+as string format and it will ignore commas.
+
+example : var arr = [1, 2, 3, 4, "chandana", 56, "nandana", 13, "pooja"];
+		
+			document.write(arr.join(' ')); 
+
+
+
+includes () :
+-------------
+it is used to check whether the element is present in an array or not.
+it displays true if the element is present, otherwise false.
+
+example 1 : var arr = [1, 2, 3, 4, "chandana", 56, "nandana", 13, "pooja"];
+			
+			document.write(arr.includes(25)); 
+o/p : false
+
+example 2 : var arr = [1, 2, 3, 4, "chandana", 56, "nandana", 13, "pooja"];
+			
+			document.write(arr.includes(56)); 
+o/p : true
+
+
+
+
+reverse ():
+-----------
+it used to print or display the array in reverse order.
+
+example : var arr = [1, 2, 3, 4, "chandana", 56, "nandana", 13, "pooja"];
+	  document.write(arr);
+	  document.write(arr.reverse()); 
+
+o/p : 1, 2, 3, 4, chandana, 56, nandana, 13, pooja  --->normal array
+      pooja,13,nandana,56,chandana,4,3,2,1 ---> reverse array
+
+
+slice ():
+---------
+it is used to extract the element from an array.
+Here, the elements are extracted from the statrting index and ends at the
+-1 index value.
+
+syntax : slice(starting index, ending index)
+
+example : var arr = [1, 2, 3, 4, "chandana", 56, "nandana", 13, "pooja"];
+			
+			document.write(arr.slice(2, 6));
+ 
+o/p : 3,4,chandana,56
+
+
+splice():
+---------
+it is also used to extract the elemnt from the array.
+Here, the elements are extracted from the statrting index and ends at the 
+ending index value.
+
+syntax : slice(starting index, ending index)
+
+example : var arr = [1, 2, 3, 4, "chandana", 56, "nandana", 13, "pooja"];
+			
+	  document.write(arr.splice(2, 6)); 
+
+o/p : 3,4,chandana,56,nandana,13
+			 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
